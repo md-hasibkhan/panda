@@ -13,7 +13,7 @@
 <body>
     <header>
         <!-- navber -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#"> <img src="images/logo.png" alt="" width="..." height="..."></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +25,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoe">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#backpac">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                   </ul>
 
@@ -130,7 +127,7 @@
 
             <!-- Shoe section -->
 
-            <section class="container">
+            <section class="container" id="shoe">
                 <h2>Shoes</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -181,7 +178,7 @@
 
             <!-- backpack section -->
 
-            <section class="container mt-5">
+            <section class="container mt-5" id="backpac">
                 <h2>Backpack</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -229,10 +226,20 @@
                     </div>
                   </div>
             </section>
+            <!-- subscribe section -->
+            <section class="container d-flex justify-content-center align-items-center bg-info rounded-3 my-5 py-3" id="subscribe">
+               <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input type="email" placeholder="Enter Your Email" name="Email" id="email">
+                <br>
+                <button class="btn btn-danger mt-1">SUBMIT</button>
+               </div>
+            </section>
         </main>   
 
-     <footer>
-
+     <footer class="mt-5 text-center">
+            <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     
 
